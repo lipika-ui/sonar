@@ -1,0 +1,139 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Input/Introduction" />
+
+<style>{`
+
+`}</style>
+
+# Inputs
+<h4>Basic Input Box</h4>
+<h5>Filled</h5>
+<code>
+{`
+<div class="default large fillInput"> 
+    <label class="inputLabel"><strong>Label</strong></label><br />
+    <mat-form-field appearance="standard">
+    <input  matInput placeholder="Placeholder" class="inputBox" />
+    <mat-form-field>
+    <mat-hint>Assistive Text</mat-hint>
+</div>
+`}
+</code>
+<h5>Outlined</h5>
+<code>
+{`
+<div class="default small outlineInput"> 
+    <label class="inputLabel"><strong>Label</strong></label><br />
+    <mat-form-field appearance="standard">
+    <input  matInput placeholder="Placeholder" class="inputBox" />
+    <mat-form-field>
+    <mat-hint>Assistive Text</mat-hint>
+</div>
+`}
+</code>
+<h5>Large</h5>
+<code>
+{`
+<div class="default large fillInput"> 
+    <label class="inputLabel"><strong>Label</strong></label><br />
+    <mat-form-field appearance="standard">
+    <input  matInput placeholder="Placeholder" class="inputBox" />
+    <mat-form-field>
+    <mat-hint>Assistive Text</mat-hint>
+</div>
+`}
+</code>
+<h5>Small</h5>
+<code>
+{`
+<div class="default small fillInput"> 
+    <label class="inputLabel"><strong>Label</strong></label><br />
+    <mat-form-field appearance="standard">
+    <input  matInput placeholder="Placeholder" class="inputBox" />
+    <mat-form-field>
+    <mat-hint>Assistive Text</mat-hint>
+</div>
+`}
+</code>
+<h4>Input Box For Price / Numbers </h4>
+<h5>Prefixed</h5>
+<code>
+{`
+<div class="default small outlineInput"> 
+    <label class="inputLabel"><strong>Label</strong></label><br />
+    <mat-form-field appearance="standard">
+    <div class="symbols" >
+        <span>$</span>
+    </div>
+    <input  matInput placeholder="Placeholder" class="inputBox" />
+    <mat-form-field>
+    <mat-hint>Assistive Text</mat-hint>
+</div>
+`}
+</code>
+<h5>Suffixed</h5>
+<code>
+{`
+<div class="default small outlineInput"> 
+    <label class="inputLabel"><strong>Label</strong></label><br />
+    <mat-form-field appearance="standard">
+    <input  matInput placeholder="Placeholder" class="inputBox" />
+    <div class="symbols" >
+        <span>$</span>
+    </div>
+    <mat-form-field>
+    <mat-hint>Assistive Text</mat-hint>
+</div>
+`}
+</code>
+<h4>Input Box For Password</h4>
+<code>
+{`
+<div class="default small outlineInput"> 
+    <label class="inputLabel"><strong>Label</strong></label><br />
+    <mat-form-field appearance="standard">
+        <input matInput [type]="hide ? 'password' : 'text'" placeholder="Placeholder" class="inputBox" />
+        <div class="icon-holder" (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+    <mat-form-field>
+    <mat-hint>Assistive Text</mat-hint>
+</div>
+`}
+</code>
+<h4>Input Box For Code Blocks</h4>
+<h6>HTML</h6>
+<code>
+{`
+<div class="inputCode">
+    <label class="inputLabel"><strong>Label</strong></label><br />
+    <div class="inputCodeBox">
+        <div class="mat-form-field-infix">
+            <input (keyup)="onInputEntry($event,i)" class="inputcode"  matInput   [type]="(active[i] && active[i]=='true') ? 'password' : 'text'"  maxlength="1" />
+        </div>
+        <div class="mat-form-field-infix">
+            <input (keyup)="onInputEntry($event,i)" class="inputcode"  matInput   [type]="(active[i] && active[i]=='true') ? 'password' : 'text'"  maxlength="1" />
+        </div>
+        <div class="mat-form-field-infix">
+            <input (keyup)="onInputEntry($event,i)" class="inputcode"  matInput   [type]="(active[i] && active[i]=='true') ? 'password' : 'text'" maxlength="1" />
+        </div>
+        <div class="mat-form-field-infix">
+            <input (keyup)="onInputEntry($event,i)" class="inputcode"  matInput   [type]="(active[i] && active[i]=='true') ? 'password' : 'text'" maxlength="1" />
+        </div>
+        <mat-hint>Assistive Text</mat-hint>
+    </div>
+</div>
+`}
+
+</code>
+<h4>Textarea</h4>
+<code>
+{`
+<div class="default small outlineInput"> 
+    <label class="inputLabel"><strong>Label</strong></label><br />
+    <mat-form-field appearance="standard">
+        <textarea matInput class="inputTextArea" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply."></textarea>
+    <mat-form-field>
+    <mat-hint>Assistive Text</mat-hint>
+</div>
+`}
+</code>

@@ -1,0 +1,29 @@
+.colorPallett {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.colorSet {
+  flex-basis: 45%;
+}
+.colorBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.colorInnerBox {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.outlinedBox {
+  background-color: transparent !important;
+}
+.codeValue {
+  width: 10%;
+}
+.codeTransparent {
+  width: 20%;
+}

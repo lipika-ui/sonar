@@ -1,0 +1,202 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import Code from '../assets/code-brackets.svg';
+import Colors from '../assets/colors.svg';
+import Comments from '../assets/comments.svg';
+import Direction from '../assets/direction.svg';
+import Flow from '../assets/flow.svg';
+import Plugin from '../assets/plugin.svg';
+import Repo from '../assets/repo.svg';
+import StackAlt from '../assets/stackalt.svg';
+
+<Meta title="Colors/Introduction" />
+
+<style>{`
+  
+
+  
+`}</style>
+
+<h2>Design Tokens</h2>
+
+<p>
+  Desgin tokes are configured in toolabs,{' '}
+  <a
+    href="https://dsm.toolabs.com/#/-MLDpUXCZOxUfWtOIOcW/XPn2NYjSm"
+    target="_blank"
+  >
+    Click here to see
+  </a>
+</p>
+<h4>Primary Color</h4>
+<code>
+  {`
+ --pink-50: #ffcfdc;
+  --pink-100: #ffa6c2;
+  --pink-200: #ff7daa;
+  --pink-300: #ff5496;
+  --pink-400: #ff2c83;
+  --pink-500: #d91a70;
+  --pink-600: #b30c5d;
+  --pink-700: #8c034a;
+  --pink-800: #660139;
+  --pink-900: #460027;
+`}
+</code>
+<h4>Secondary Color</h4>
+<code>
+  {`
+  --blue-50: #ebe6ff;
+  --blue-100: #cabdff;
+  --blue-200: #a694ff;
+  --blue-300: #7f6bff;
+  --blue-400: #5643ff;
+  --blue-500: #392ed9;
+  --blue-600: #221db3;
+  --blue-700: #0f0f8c;
+  --blue-800: #0a0d66;
+  --blue-900: #07094e;
+  --violent-50: #fad9ff;
+  --violent-100: #f2b0ff;
+  --violent-200: #e787ff;
+  --violent-300: #d35cf7;
+  --violent-400: #ba31ea;
+  --violent-500: #931fc4;
+  --violent-600: #6f119e;
+  --violent-700: #4f0778;
+  --violent-800: #330452;
+  --violent-900: #210335;
+  --light-blue-50: #9ed7f0;
+  --light-blue-100: #71bde3;
+  --light-blue-200: #49a2d6;
+  --light-blue-300: #2487c9;
+  --light-blue-400: #046cbc;
+  --light-blue-500: #005096;
+  --light-blue-600: #003870;
+  --light-blue-700: #00224a;
+  --light-blue-800: #000f24;
+  --light-blue-900: #000814;
+  --pale-cyan-50: #cbf1f2;
+  --pale-cyan-100: #9ce1e6;
+  --pale-cyan-200: #71ced9;
+  --pale-cyan-300: #71ced9;
+  --pale-cyan-400: #27a5bf;
+  --pale-cyan-500: #177f99;
+  --pale-cyan-600: #0b5b73;
+  --pale-cyan-700: #04394d;
+  --pale-cyan-800: #021b26;
+  --pale-cyan-900: #01141c;
+`}
+</code>
+
+<h4>Support Color</h4>
+<code>
+  {`
+  --green-50: #c4ffd6;
+  --green-100: #95f5b5;
+  --green-200: #68e897;
+  --green-300: #40db7e;
+  --green-400: #1acf67;
+  --green-500: #0da856;
+  --green-600: #048243;
+  --green-700: #005c31;
+  --green-800: #00361e;
+  --green-900: #002816;
+  --pale-blue-50: #9ed7f0;
+  --pale-blue-100: #71bde3;
+  --pale-blue-200: #49a2d6;
+  --pale-blue-300: #2487c9;
+  --pale-blue-400: #046cbc;
+  --pale-blue-500: #005096;
+  --pale-blue-600: #003870;
+  --pale-blue-700: #00224a;
+  --pale-blue-800: #000f24;
+  --pale-blue-900: #000814;
+  --organe-50: #ffe8bd;
+  --organe-100: #ffd694;
+  --organe-200: #ffc16b;
+  --organe-300: #ffaa42;
+  --organe-400: #fa8f1a;
+  --organe-500: #d46c0b;
+  --organe-600: #ad4e00;
+  --organe-700: #873800;
+  --organe-800: #612500;
+  --organe-900: #4d1d00;
+  --red-50: #fff2f0;
+  --red-100: #ffd1cc;
+  --red-200: #ffa9a3;
+  --red-300: #ff7f7a;
+  --red-400: #ff5252;
+  --red-500: #d93b40;
+  --red-600: #b32731;
+  --red-700: #8c1823;
+  --red-800: #66101c;
+  --red-900: #500c15;
+`}
+</code>
+
+<h4>Neutral Color</h4>
+<code>
+  {`
+  --white-50: #fafcfe;
+  --white-100: #f6f7fa;
+  --white-200: #f1f2f5;
+  --grey-300: #e9eaed;
+  --grey-400: #c7c8cb;
+  --grey-500: #a9aaad;
+  --grey-600: #7f8083;
+  --black-700: #6a6c6e;
+  --black-800: #4b4c4e;
+  --black-900: #000000;
+`}
+</code>
+
+# Colors
+
+<h2>Primary Color</h2>
+<code>
+  {`
+  <div class="primary">
+     <div class="pink">
+       <div class="C50">
+          <p>Colors</p>
+       </div>
+     </div>
+  </div>
+`}
+</code>
+<h2>Secondary Color</h2>
+<code>
+  {`
+  <div class="secondary">
+     <div class="blue">
+       <div class="C50">
+          <p>Colors</p>
+       </div>
+     </div>
+  </div>
+`}
+</code>
+<h2>Support Color</h2>
+<code>
+  {`
+  <div class="teritary">
+     <div class="green">
+       <div class="C50">
+          <p>Colors</p>
+       </div>
+     </div>
+  </div>
+`}
+</code>
+<h2>Neutral Color</h2>
+<code>
+  {`
+  <div class="neutral">
+     <div class="green">
+       <div class="C50">
+          <p>Colors</p>
+       </div>
+     </div>
+  </div>
+`}
+</code>

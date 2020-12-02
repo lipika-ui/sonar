@@ -1,0 +1,53 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Grid/Introduction" />
+
+<style>{`
+
+`}</style>
+
+# Grid
+
+<h4>Break points</h4>
+<code>
+{`
+gridByBreakpoint = {
+    xl: 12,
+    lg: 12,
+    md: 12,
+    sm: 8,
+    sml :12,
+    xs: 4,
+  }
+`}
+</code>
+
+<h4>Gutter Size</h4>
+<code>
+{`
+gutterSize = {
+    sm : 16,
+    lg : 24
+  }
+`}
+</code>
+
+<h4>Grid list</h4>
+<code>
+{`
+<mat-grid-list #grid cols="12" rowHeight="1:5" gutterSize="20px">
+    <mat-grid-tile>1</mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+    <mat-grid-tile>5</mat-grid-tile>
+    <mat-grid-tile>6</mat-grid-tile>
+    <mat-grid-tile>7</mat-grid-tile>
+    <mat-grid-tile>8</mat-grid-tile>
+    <mat-grid-tile>9</mat-grid-tile>
+    <mat-grid-tile>10</mat-grid-tile>
+    <mat-grid-tile>11</mat-grid-tile>
+    <mat-grid-tile>12</mat-grid-tile>
+</mat-grid-list>
+`}
+</code>

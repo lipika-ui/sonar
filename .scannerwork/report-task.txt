@@ -1,0 +1,6 @@
+projectKey=test-app
+serverUrl=https://sonarqube-dev.lla.digital
+serverVersion=8.2.0.32929
+dashboardUrl=https://sonarqube-dev.lla.digital/dashboard?id=test-app
+ceTaskId=AXYhvQQilRDbaPbCYidf
+ceTaskUrl=https://sonarqube-dev.lla.digital/api/ce/task?id=AXYhvQQilRDbaPbCYidf

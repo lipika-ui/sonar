@@ -1,0 +1,30 @@
+pipeline{
+    agent any
+    tools {nodejs "nodejs"}
+environment {
+        CHROME_BIN = '/bin/google-chrome'
+    }
+    stages {
+    stage('git Checkout')
+    {
+        steps {
+git branch: 'LLADF-40', credentialsId: '369e573b-c8de-47cd-80e3-1743d4f8071a', url: 'https://github.com/LLA-io/LLA-monorepo.git'}
+}
+stage('install dependencies')
+    {
+        steps{sh 'npm install'}
+    } 
+stage('unit test')
+    {
+        steps{sh 'nx test'}
+    }   
+ stage('lint check')
+    {
+        steps{sh 'nx lint'}
+    }        
+ stage('build')
+    {
+        steps{sh 'nx build --prod --base-href="/"'}
+    }
+    }
+}

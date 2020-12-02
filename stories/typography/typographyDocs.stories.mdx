@@ -1,0 +1,333 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Typography/Introduction" />
+
+<style>{`
+
+`}</style>
+
+# Typography
+
+Inter is a typeface carefully crafted & designed for computer screens.
+
+Inter features a tall x-height to aid in readability of mixed-case and lower-case text. Several OpenType features are provided as well, like contextual alternates that adjusts punctuation depending on the shape of surrounding glyphs, slashed zero for when you need to disambiguate "0" from "o", tabular numbers, etc.
+
+<h2>Design Tokens</h2>
+
+<p>
+  Desgin tokes are configured in toolabs,{' '}
+  <a
+    href="https://dsm.toolabs.com/#/-MLDpUXCZOxUfWtOIOcW/4ZvqKciSAg"
+    target="_blank"
+  >
+    Click here to see
+  </a>
+</p>
+
+<h4>Heading</h4>
+<code>
+  {`
+@mixin h7() {
+  font-family : $InterExtra;
+  font-size : 100px;
+  line-height: 90px;
+}
+@mixin h1() {
+  font-family : $InterBold;
+  font-size : 70px;
+  line-height: 84.72px;
+}
+@mixin h2() {
+  font-family : $InterBold;
+  font-size : 55px;
+  line-height: 67px;
+}
+@mixin h3() {
+  font-family : $InterBold;
+  font-size : 45px;
+  line-height: 54px;
+}
+@mixin h4() {
+  font-family : $InterBold;
+  font-size : 34px;
+  line-height: 41px;
+}
+@mixin h5() {
+  font-family : $InterBold;
+  font-size : 30px;
+  line-height: 36px;
+}
+@mixin h6() {
+  font-family : $InterBold;
+  font-size : 20px;
+  line-height: 24px;
+}
+`}
+</code>
+<h4>Body</h4>
+<code>
+  {`
+@mixin b1() {
+  font-family : $InterRegular;
+  font-size : 30px;
+  line-height: 36px;
+}
+@mixin b2() {
+  font-family : $InterRegular;
+  font-size : 24px;
+  line-height: 29px;
+}
+@mixin b3() {
+  font-family : $InterRegular;
+  font-size : 18px;
+  line-height: 22px;
+}
+@mixin b4() {
+  font-family : $InterRegular;
+  font-size : 16px;
+  line-height: 19px;
+}
+`}
+</code>
+<h4>Subline</h4>
+<code>
+  {`
+@mixin s1() {
+  font-family : $InterBold;
+  font-size : 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+@mixin s2() {
+  font-family : $InterBold;
+  font-size : 24px;
+  line-height: 29px;
+}
+@mixin s3() {
+  font-family : $InterBold;
+  font-size : 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+@mixin s4() {
+  font-family : $InterBold;
+  font-size : 18px;
+  line-height: 22px;
+}
+`}
+</code>
+<h2>Headings</h2>
+
+Headline Size - 800 (Intern Bold 800)
+
+<h4>H1 Tag</h4>
+<code>
+  {`
+  <h1 class="h1">Headings</h1>
+`}
+</code>
+<h4>H2 Tag</h4>
+<code>
+  {`
+  <h2 class="h2">Headings</h2>
+`}
+</code>
+<h4>H3 Tag</h4>
+<code>
+  {`
+  <h3 class="h3">Headings</h3>
+`}
+</code>
+<h4>H4 Tag</h4>
+<code>
+  {`
+  <h4 class="h4">Headings</h4>
+`}
+</code>
+<h4>H5 Tag</h4>
+<code>
+  {`
+  <h5 class="h5">Headings</h5>
+`}
+</code>
+<h4>H6 Tag</h4>
+<code>
+  {`
+  <h6 class="h6">Headings</h6>
+`}
+</code>
+<h2>Big Sizes - Headings</h2>
+
+Big Sizes - (Intern Extra 900)
+
+<h4>H7 Tag</h4>
+<code>
+  {`
+  <p class="storybook-bigsizes">Headings</h6>
+`}
+</code>
+
+<h2>Body</h2>
+
+Body Sizes - (Intern Regular 400)
+
+<h4>B1 Body</h4>
+<code>
+  {`
+  <h1 class="b1">Body</h1>
+`}
+</code>
+<h4>B2 Body</h4>
+<code>
+  {`
+  <h2 class="b2">Body</h2>
+`}
+</code>
+<h4>B3 Body</h4>
+<code>
+  {`
+  <h3 class="b3">Body</h3>
+`}
+</code>
+<h4>B4 Body</h4>
+<code>
+  {`
+  <h4 class="b4">Body</h4>
+`}
+</code>
+
+<h2>Subline</h2>
+
+Subline Sizes - (Intern Bold 800)
+
+<h4>S1 Subline</h4>
+<code>
+  {`
+  <h1 class="s1">Subline</h1>
+`}
+</code>
+<h4>S2 Subline</h4>
+<code>
+  {`
+  <h2 class="s2">Subline</h2>
+`}
+</code>
+<h4>S3 Subline</h4>
+<code>
+  {`
+  <h3 class="s3">Subline</h3>
+`}
+</code>
+<h4>S4 Subline</h4>
+<code>
+  {`
+  <h4 class="s4">Subline</h4>
+`}
+</code>
+
+<h2>Text Combinations</h2>
+<h4>Large Version</h4>
+<code>
+  {`
+   <p class="storybook-title storybook-title-large"> Meet the small wild cats of Bhutan </p>
+   <p class="storybook-body storybook-body-large"> Did you know that Bhutan is a hotspot of wild cat diversity? It is home to 11 species of wild cats which is about 30% of all wild cat species found in the world. Considering that Bhutan only covers .03% of the earth’s surface, that number seems even more amazing. </p>
+`}
+</code>
+<h4>Medium Version</h4>
+<code>
+  {`
+   <p class="storybook-title storybook-title-medium"> Meet the small wild cats of Bhutan </p>
+   <p class="storybook-body storybook-body-medium"> Did you know that Bhutan is a hotspot of wild cat diversity? It is home to 11 species of wild cats which is about 30% of all wild cat species found in the world. Considering that Bhutan only covers .03% of the earth’s surface, that number seems even more amazing. </p>
+`}
+</code>
+<h4>Small Version</h4>
+<code>
+  {`
+   <p class="storybook-title storybook-title-small"> Meet the small wild cats of Bhutan </p>
+   <p class="storybook-body storybook-body-small"> Did you know that Bhutan is a hotspot of wild cat diversity? It is home to 11 species of wild cats which is about 30% of all wild cat species found in the world. Considering that Bhutan only covers .03% of the earth’s surface, that number seems even more amazing. </p>
+`}
+</code>
+<h4>Regular Version</h4>
+<code>
+  {`
+   <p class="storybook-title storybook-title-regular"> Meet the small wild cats of Bhutan </p>
+   <p class="storybook-title storybook-title-regular"> Did you know that Bhutan is a hotspot of wild cat diversity? It is home to 11 species of wild cats which is about 30% of all wild cat species found in the world. Considering that Bhutan only covers .03% of the earth’s surface, that number seems even more amazing. </p>
+`}
+</code>
+<h2>Text Alignment</h2>
+<h4>Left Align</h4>
+<code>
+  {`
+   <h1 class="h1 textLeft">Headings</h1>
+`}
+</code>
+<h4>Right Align</h4>
+<code>
+  {`
+   <h1 class="h1 textRight">Headings</h1>
+`}
+</code>
+<h4>Center Align</h4>
+<code>
+  {`
+   <h1 class="h1 textCenter">Headings</h1>
+`}
+</code>
+<h2>Support Colors</h2>
+Primary Color:
+<code>
+  {`
+  <div class="primary-color">
+    <h1 class="h1">Headings</h1>
+  </div>
+`}
+</code>
+Success Color:
+<code>
+  {`
+  <div class="success-color">
+    <h1 class="h1">Headings</h1>
+  </div>
+`}
+</code>
+Info Color:
+<code>
+  {`
+  <div class="info-color">
+    <h1 class="h1">Headings</h1>
+  </div>
+`}
+</code>
+Disabled Color:
+<code>
+  {`
+  <div class="disabled-color">
+    <h1 class="h1">Headings</h1>
+  </div>
+`}
+</code>
+Error Color:
+<code>
+  {`
+  <div class="erro-color">
+    <h1 class="h1">Headings</h1>
+  </div>
+`}
+</code>
+<h2>Dark / Light Mode</h2>
+Dark Mode
+<code>
+  {`
+  <div class="dark-theme">
+    <h1 class="h1">Headings</h1>
+  </div>
+`}
+</code>
+Light Mode
+<code>
+  {`
+  <div class="light-theme">
+    <h1 class="h1">Headings</h1>
+  </div>
+`}
+</code>

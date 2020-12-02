@@ -1,0 +1,86 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Radiobutton/Introduction" />
+
+<style>{`
+
+`}</style>
+
+# Radio button
+
+<h4>Primary Radio button</h4>
+<code>
+{`
+<div class="primary-radiobutton">
+    <mat-radio-button value="1" [disabled]="disabled">
+    </mat-radio-button>
+</div>
+`}
+</code>
+<h4>Primary Radio button Grouped</h4>
+<code>
+{`
+<div class="primary-radiobutton">
+    <mat-radio-group>
+        <mat-radio-button value="1" [disabled]="disabled">
+        </mat-radio-button>
+        <mat-radio-button value="2" [disabled]="disabled">
+        </mat-radio-button>
+    </mat-radio-group>
+</div>
+`}
+</code>
+
+<h4>Primary Radio button With Caption</h4>
+<code>
+{`
+<div class="primary-radiobutton">
+    <p class="caption" *ngIf="caption">caption</p>
+    <mat-radio-group>
+        <mat-radio-button value="1" [disabled]="disabled">
+        </mat-radio-button>
+        <mat-radio-button value="2" [disabled]="disabled">
+        </mat-radio-button>
+    </mat-radio-group>
+</div>
+`}
+</code>
+
+
+<h4>Primary Radio button With Label</h4>
+<code>
+{`
+<div class="primary-radiobutton">
+    <mat-radio-group>
+        <mat-radio-button value="1" [disabled]="disabled">
+            <span>Radio label</span>
+        </mat-radio-button>
+        <mat-radio-button value="2" [disabled]="disabled">
+             <span>Radio label</span>
+        </mat-radio-button>
+    </mat-radio-group>
+</div>
+`}
+</code>
+
+<h4>Primary Radio button - Horizontal Alignment</h4>
+<code>
+{`
+<div class="primary-radiobutton">
+    <mat-radio-group>
+        <mat-radio-button value="1" [disabled]="disabled">
+            <span>Radio label</span>
+            <span>&nbsp;&nbsp;</span>
+            <br/><br/>
+        </mat-radio-button>
+        <mat-radio-button value="2" [disabled]="disabled">
+            <span>Radio label</span>
+            <span>&nbsp;&nbsp;</span>
+            <br/><br/>
+        </mat-radio-button>
+    </mat-radio-group>
+</div>
+`}
+</code>
+
+
